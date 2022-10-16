@@ -6,6 +6,12 @@ jobs:
   github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: ls -la
+        run: ls -la
+      - name: check out
+        uses: actions/checkout@v3
+      - name: ls -la2
+        run: ls -la
       - name: simple js action
         id: simple-js-action
         uses: actions/hello-world-javascript-action@v1
