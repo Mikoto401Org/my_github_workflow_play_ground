@@ -6,6 +6,8 @@ jobs:
   github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: maven test
+        run: mvn --version
       - name: ls -la
         run: ls -la
       - name: check out
